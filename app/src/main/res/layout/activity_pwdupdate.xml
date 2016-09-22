@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <hhh.appstudy.view.TitleView
+        android:id="@+id/pwd_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tv_title="@string/update_pwd"
+        app:tv_right="@string/reg_submit"
+        app:tv_tv_right_visibility="visable"
+        />
+    <hhh.appstudy.view.MEditText
+        android:id="@+id/pwd_oldpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:me_hint="@string/oldpwd"
+        app:me_eye_enable="true"
+        app:me_del_enable="true"
+        app:me_label_src="@drawable/select_pwd"
+        />
+    <hhh.appstudy.view.MEditText
+        android:id="@+id/pwd_newpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:me_hint="@string/newpwd"
+        app:me_eye_enable="true"
+        app:me_del_enable="true"
+        app:me_label_src="@drawable/select_pwd"
+        />
+    <hhh.appstudy.view.MEditText
+        android:id="@+id/pwd_repwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:me_hint="@string/repwd"
+        app:me_eye_enable="true"
+        app:me_del_enable="true"
+        app:me_label_src="@drawable/select_pwd"
+        />
+</LinearLayout>

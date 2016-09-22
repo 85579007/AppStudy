@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <hhh.appstudy.view.TitleView
+        android:id="@+id/validate_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tv_tv_right_visibility="visable"
+        app:tv_title="@string/validate_title"
+        app:tv_right="@string/reg_submit"
+        />
+    <hhh.appstudy.view.MEditText
+        android:id="@+id/validate_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:me_hint="@string/reg_phone"
+        app:me_del_enable="true"
+        app:me_input_type="number"
+        app:me_max_length="11"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/validate_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/validate_getcode"
+            android:textSize="@dimen/font_size_18"
+            android:gravity="center"
+            android:enabled="false"
+            android:background="@drawable/select_bt_bg"
+            android:layout_alignTop="@+id/validate_code"
+            android:layout_alignBottom="@+id/validate_code"
+            android:layout_alignParentRight="true"/>
+        <hhh.appstudy.view.MEditText
+            android:id="@id/validate_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:me_label_src="@drawable/user"
+            app:me_hint="@string/validate_code"
+            app:me_input_type="number"
+            app:me_del_enable="true"
+            android:layout_toLeftOf="@id/validate_get_code"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="bg" format="color|reference"/>
+    <attr name="text_color" format="color"/>
+
+    <declare-styleable name="TitleView">
+        <attr name="tv_title" format="string"/>
+        <attr name="tv_right" format="string"/>
+        <attr name="tv_back_visibility" format="enum">
+            <enum name="visable" value="0"/>
+            <enum name="invisable" value="1"/>
+            <enum name="gone" value="2"/>
+        </attr>
+        <attr name="tv_tv_right_visibility" format="enum">
+            <enum name="visable" value="0"/>
+            <enum name="invisable" value="1"/>
+            <enum name="gone" value="2"/>
+        </attr>
+        <attr name="tv_img_right_visibility" format="enum">
+            <enum name="visable" value="0"/>
+            <enum name="invisable" value="1"/>
+            <enum name="gone" value="2"/>
+        </attr>
+    </declare-styleable>
+    
+    <declare-styleable name="MEditText">
+        <attr name="me_label_src" format="reference|color"/>
+        <attr name="me_hint" format="string"/>
+        <attr name="me_text" format="string"/>
+        <attr name="me_eye_enable" format="boolean"/>
+        <attr name="me_del_enable" format="boolean"/>
+        <attr name="me_input_type" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="password" value="1"/>
+            <enum name="number" value="3"/>
+        </attr>
+        <attr name="me_max_length" format="integer"/>
+    </declare-styleable>
+    
+    <declare-styleable name="CircleImageView">
+        <attr name="cv_instroke" format="dimension"/>
+        <attr name="cv_outstroke" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="UserInfoView">
+        <attr name="uv_label" format="string"/>
+        <attr name="uv_input_enable" format="boolean"/>
+        <attr name="uv_input_hint" format="string"/>
+        <attr name="uv_input_visible" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="gone" value="1"/>
+        </attr>
+        <attr name="uv_photo_visible" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="gone" value="1"/>
+        </attr>
+        <attr name="uv_next_visible" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="gone" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

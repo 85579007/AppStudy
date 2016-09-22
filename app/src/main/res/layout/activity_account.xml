@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <hhh.appstudy.view.TitleView
+        android:id="@+id/account_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tv_right="@string/reg_submit"
+        app:tv_tv_right_visibility="visable"
+        app:tv_title="@string/app_name"
+        />
+    <hhh.appstudy.view.MEditText
+        android:id="@+id/account_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:me_hint="@string/reg_phone"
+        app:me_max_length="11"
+        app:me_del_enable="true"
+        app:me_label_src="@drawable/select_phone"
+        />
+    <hhh.appstudy.view.MEditText
+        android:id="@+id/account_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:me_hint="@string/email"
+        app:me_max_length="11"
+        app:me_del_enable="true"
+        app:me_label_src="@drawable/select_email"
+        android:visibility="gone"
+        />
+</LinearLayout>

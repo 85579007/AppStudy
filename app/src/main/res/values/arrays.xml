@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="center_items">
+        <item>校内信息</item>
+        <item>账号与安全</item>
+        <item>系统设置</item>
+        <item>意见反馈</item>
+    </string-array>
+
+    <string-array name="sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string-array name="role">
+        <item>学生</item>
+        <item>教师</item>
+    </string-array>
+    
+    <string-array name="user_items">
+        <item>张三</item>
+        <item>张四</item>
+        <item>张五</item>
+        <item>张六</item>
+        <item>张七</item>
+        <item>张八</item>
+        <item>张久</item>
+        <item>张1</item>
+        <item>张2</item>
+        <item>张3</item>
+        <item>张4</item>
+        <item>张5</item>
+    </string-array>
+
+    <string-array name="tk">
+        <item>选择</item>
+        <item>判断</item>
+        <item>多选</item>
+    </string-array>
+</resources>

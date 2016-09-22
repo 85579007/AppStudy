@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/select_edit_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/medit_root">
+    <EditText
+        android:id="@+id/medit_input"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"
+        android:background="@android:color/transparent"
+        android:layout_toRightOf="@+id/medit_label"
+        android:layout_toLeftOf="@+id/medit_end"
+        android:textColor="@color/text_color"
+        android:hint="内容输入"
+        android:textSize="@dimen/font_size_18"/>
+    <ImageView
+        android:id="@id/medit_label"
+        android:layout_width="@dimen/size_48"
+        android:layout_height="@dimen/size_48"
+        android:padding="4dp"
+        android:layout_alignTop="@id/medit_input"
+        android:layout_alignBottom="@id/medit_input"/>
+    <LinearLayout
+        android:id="@id/medit_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@+id/medit_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:src="@drawable/select_eye"/>
+        <ImageView
+            android:id="@+id/medit_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/select_del"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</RelativeLayout>

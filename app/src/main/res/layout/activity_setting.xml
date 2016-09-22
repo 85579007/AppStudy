@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="?attr/bg"
+    android:layout_height="match_parent">
+    <hhh.appstudy.view.TitleView
+        android:id="@+id/setting_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tv_title="@string/setting"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nightmode"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/font_size_16"
+            android:layout_centerVertical="true"/>
+        <CheckBox
+            android:id="@+id/setting_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_16"
+            android:button="@drawable/select_switchbtn"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <hhh.appstudy.view.UserInfoView
+        android:id="@+id/setting_checkupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:uv_label="@string/versionupdate"
+        app:uv_input_visible="gone"
+        app:uv_input_enable="false"
+        app:uv_photo_visible="gone"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        />
+</LinearLayout>
